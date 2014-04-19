@@ -10,7 +10,7 @@ public class MultiThread {
 		// TODO Auto-generated method stub
 		System.out.println("Start");
 		List<Runnable> lst = new ArrayList<Runnable>();
-		for (Long i = 1l; i < 50l; i++) {
+		for (Long i = 1l; i < 500l; i++) {
 			Runnable t = new Task(i*5, i);
 			lst.add(t);
 			Thread tr = new Thread(t);
